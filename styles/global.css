@@ -1,0 +1,14 @@
+* {
+  font-family: "Montserrat", serif;
+}
+
+.scroll-box-fpalpha {
+  max-height: 300px;
+  /* límite de altura */
+  overflow-y: auto !important;
+  /* scroll interno */
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.15); /* X Y Blur Color */
+  border-radius: 20px;
+}
