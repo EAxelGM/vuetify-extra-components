@@ -1,14 +1,35 @@
 {
   "name": "vuetify-extra-components",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Axel Gonzalez (https://github.com/EAxelGM/)",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.js",
+      "require": "./dist/components/*.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAxelGM/vuetify-extra-components"
+  },
+  "bugs": {
+    "url": "https://github.com/EAxelGM/vuetify-extra-components/issues"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "vue": "^3.5.21",
     "vuetify": "^3.10.2"
@@ -23,5 +44,13 @@
     "vite": "^7.1.6",
     "vite-plugin-vuetify": "^2.1.2",
     "vue-tsc": "^3.0.7"
-  }
+  },
+  "keywords": [
+    "vuetify",
+    "extra",
+    "components",
+    "v-data-table",
+    "vue",
+    "best"
+  ]
 }

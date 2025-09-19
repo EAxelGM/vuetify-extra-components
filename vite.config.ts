@@ -7,4 +7,20 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }), // 👈
   ],
+  build: {
+    lib: {
+      entry: "src/index.ts",
+      name: "VuetifyExtraComponents",
+      fileName: (format) => `vuetify-extra-components.${format}.js`
+    },
+    rollupOptions: {
+      external: ["vue", "vuetify"],
+      output: {
+        globals: {
+          vue: "Vue",
+          vuetify: "Vuetify"
+        }
+      }
+    }
+  }
 });
