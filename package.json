@@ -1,23 +1,24 @@
 {
   "name": "vuetify-extra-components",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "author": "Axel Gonzalez (https://github.com/EAxelGM/)",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build_old": "vue-tsc -b && vite build",
+    "build": "vite build && node scripts/copy-components.js",
     "preview": "vite preview"
   },
   "exports": {
     ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/vuetify-extra-components.es.js",
+      "require": "./dist/vuetify-extra-components.umd.js"
     },
     "./components/*": {
-      "import": "./dist/components/*.js",
-      "require": "./dist/components/*.js"
+      "import": "./dist/components/*.vue",
+      "require": "./dist/components/*.vue"
     }
   },
   "repository": {
