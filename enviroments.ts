@@ -3,7 +3,6 @@ const envs = {
   port: process.env.PORT || 3000,
   host: process.env.HOST,
   isDevelopment: false,
-  baseUrl: process.env.BASE_URL
 }
 envs.isDevelopment = envs.nodeEnv === "development"
 

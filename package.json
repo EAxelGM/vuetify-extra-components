@@ -26,7 +26,8 @@
     "dist"
   ],
   "scripts": {
-    "deploy": "node scripts/copy-components.js && npm publish",
+    "dist": "node scripts/copy-components.js",
+    "deploy": "npm run dist && npm publish",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "local": "nuxt dev --host=0.0.0.0",
