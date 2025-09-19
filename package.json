@@ -1,19 +1,20 @@
 {
   "name": "@eaxelgm/vuetify-extra-components",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Axel Gonzalez (https://github.com/EAxelGM/)",
   "license": "MIT",
   "publishConfig": { "access": "public" },
   "exports": {
     ".": {
-      "import": "./dist/vuetify-extra-components.es.js",
-      "require": "./dist/vuetify-extra-components.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./components/*": {
-      "import": "./dist/components/*.vue",
-      "require": "./dist/components/*.vue"
+      "import": "./dist/components/*",
+      "require": "./dist/components/*"
     }
   },
   "repository": {
