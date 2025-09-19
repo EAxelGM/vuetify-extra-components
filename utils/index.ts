@@ -20,7 +20,7 @@ export const formatIntl = (value = 0, {style = "decimal", lang = "en-In", curren
   return new Intl.NumberFormat(lang, options).format(value);
 }
 
-export const projectName = 'External Api Sys';
+export const projectName = 'Vuetify Extra Components';
 
 export const getGravatarUrl = (email: string, size = 200) => {
   const hash = CryptoJS.MD5(email.trim().toLowerCase()).toString()
