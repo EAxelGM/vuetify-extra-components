@@ -1,0 +1,7 @@
+{
+  "files.trimTrailingWhitespace": false,
+  "files.trimFinalNewlines": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": false
+}
